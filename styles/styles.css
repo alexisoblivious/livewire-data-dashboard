@@ -1,0 +1,299 @@
+:root {
+  --lw-red: #ff0009;
+  --lw-red-lightest: #ffbfc1;
+  --lw-red-light: #ff666b;
+  --lw-red-dark: #990005;
+  --lw-red-darkest: #400002;
+  --lw-yellow: #fffb00;
+  --lw-yellow-lightest: #fffebf;
+  --lw-yellow-light: #fffc40;
+  --lw-yellow-dark: #e8e502;
+  --lw-yellow-darkest: #403f00;
+  --lw-blue: #0011ff;
+  --lw-blue-lightest: #bfc3ff;
+  --lw-blue-light: #404cff;
+  --lw-blue-dark: #000dbf;
+  --lw-blue-darkest: #000440;
+  --error: #ff0108;
+  --warning: #ce8500;
+  --success: #3cb371;
+  --white: #fff6f6;
+  --black: #040d12;
+  --gray: #b8bfc6;
+}
+
+div {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navbar.bg-livewire {
+  background-color: #040d12;
+  color: white;
+  border-bottom: 3px solid var(--lw-red);
+  width: 100%;
+  padding-right: 0;
+}
+.logo-text {
+  font-family: "Azonix", sans-serif;
+  letter-spacing: 20px;
+  font-size: 1.5em;
+}
+
+div.livewire-banner {
+  margin-bottom: 0;
+  padding-top: 50px;
+  background-image: url("../images/liveWireBackground.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  border-bottom: 3px solid var(--lw-red);
+  width: 100%;
+}
+.banner-text {
+  position: relative;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  align-self: center;
+}
+
+.banner-text h1 {
+  font-family: "Azonix", sans-serif;
+  font-size: 9vw;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.5em;
+  text-shadow:
+  1.41px 1.41px #040d12,
+  2px 0 #040d12,
+  2.41px -1.41px #040d12,
+  0 -3px #040d12,
+  -1.41px -1.41px #040d12,
+  -2px 0 #040d12,
+  -1.41px 1.41px #040d12,
+  0 3px #040d12,
+  0 0 15px white;
+}
+
+.banner-text p {
+  font-family: 'Azonix', sans-serif;
+  font-size: 5vw;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-left: 0;
+  letter-spacing: 0.43em;
+  text-shadow:  1.41px 1.41px #040d12,
+  1.5px 0 #040d12,
+  1.41px -1.41px #040d12,
+  0 -1.5px #040d12,
+  -1.41px -1.41px #040d12,
+  -1.5px 0 #040d12,
+  -1.41px 1.41px #040d12,
+  0 1.5px #040d12,
+  0 0 15px white;
+  line-height: 1;
+  padding-right: 20px;
+}
+.element-heading {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+.tab-pane h2{
+  font-size: 1.2rem;
+  padding: auto;
+  padding-bottom: 15px;
+}
+
+.livewire-nav-side {
+  background-color: var(--black);
+  letter-spacing: 5px;
+}
+.livewire-nav-side h2{
+  border-bottom: 3px solid var(--lw-red); 
+}
+.nav.nav-tabs,
+.nav.nav-tabs:hover {
+  border: none;
+  letter-spacing: 3px;
+}
+.nav-link.active {
+  background-color: var(--lw-red) !important;
+  text-shadow:
+  0.5px 0.5px #040d12,
+  0.5px 0 #040d12,
+  0.5px -0.5px #040d12,
+  0 -0.5px #040d12,
+  -0.5px -0.5px #040d12,
+  -0.5px 0 #040d12,
+  -0.5px 0.5px #040d12,
+  0 0.5px #040d12;
+}
+.nav-link:hover {
+  border-left: solid 3px var(--lw-red) !important;
+  border-right: solid 3px var(--lw-red) !important;
+  opacity: 0.5;
+}
+
+.nav-link:focus,
+.nav .nav-item .nav-link.active {
+  border-radius: 10px;
+  /* background-color: var(--lw-red) !important; */
+  border-color: none;
+  color: #040d12;
+  outline: none;
+}
+.nav-link,
+.nav-link:link,
+.nav-link:visited {
+  border: none !important;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+}
+.heading {
+  font-family: "Azonix", sans-serif;
+}
+
+/* Dashboard */
+.dashboard {
+  height: calc(100vh - 100px);
+}
+
+.left-pane {
+  align-content: space-between;
+  height: calc(100vh - 100px);
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.right-pane {
+  background-image: url('../images/AdobeStock_393431922.png');
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  align-content: space-between;
+  height: calc(100vh - 100px);
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+#left-top {
+  height: calc((100vh - 100px)/5);
+  border-bottom: lightgray 1px solid;
+  width: 99%;
+
+}
+
+#left-bottom {
+  height: calc((100vh - 100px)*4/5);
+}
+svg {
+  /* border: 1px black solid; */
+  padding: 0px !important;
+}
+
+#svg-6 svg,
+#svg-3 svg,
+#svg-1 svg {
+  max-height: calc((100vh - 100px)/3);
+}
+
+#svg-9 svg,
+#svg-7 svg,
+#title {
+  max-height: calc((100vh - 100px)1/5);
+}
+
+#svg-9 svg,
+#svg-7 svg {
+  max-height: calc((100vh - 100px)1/5);
+}
+#svg-4 svg,
+#svg-5 svg,
+#svg-2 svg,
+#svg-8 svg {
+  max-height: calc((100vh - 100px)*2/5);
+}
+
+#select-country {
+  position: absolute;
+  left: calc(85vw);
+  top: 110px;
+  width: 150px !important;
+  background-color: var(--lw-blue-darkest);
+  color: var(--white);
+  padding: 5px;
+  border: none;
+}
+
+@media only screen and (max-width: 991px) {
+  #select-country {
+    position: relative;
+    left: 65vw;
+    top: 40px;
+    width: 150px !important;
+    background-color: var(--lw-blue-darkest);
+    color: var(--white);
+    padding: 5px;
+    border: none;
+  }
+  .right-pane {
+    background-image: url('../images/AdobeStock_393431922.png');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    align-content: space-between;
+    height: calc(100vh - 50px);
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+  
+
+.single-value-container {
+  display: flex;
+  position: relative;
+  clear: below;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  justify-content: space-between; /* Space out the single value charts */
+  padding: 10px; /* Add padding to the container */
+  margin-bottom: 20px;
+  height: calc((100vh - 100px)1/5);
+  border-bottom: 1px black solid  ;  
+}
+
+.single-value {
+
+  flex: 1;
+  border: 1px solid black; /* Add 1px border around each chart */
+  padding: 5px; /* Add padding to each chart */
+  background-color: white; /* Set background color to white */
+}
+.chart-title {
+  font-weight: bold;
+  border-bottom: lightgray 1px solid;
+  padding-bottom: 15px;
+}
+
+.chart-label {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+
+.chart-value {
+  font-size: 2.4vw; /* Increase font size for the big red numbers */
+  color: red;
+}
+
+#livewireTitleContainer{
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Azonix", sans-serif;
+
+}
